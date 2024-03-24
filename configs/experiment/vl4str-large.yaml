@@ -1,0 +1,18 @@
+# @package _global_
+defaults:
+  - override /model: vl4str
+
+model:
+  #img_size: [ 240, 240 ]
+  img_size: [ 224, 224 ]      # [ height, width ]
+  patch_size: [ 14, 14 ]      # [ height, width ]
+
+  # Training
+  lr: 0.000007809184631
+
+  dec_num_heads: 8
+  dec_mlp_ratio: 4
+  dec_depth: 1
+# NOTE: add M-clip_pretrained
+clip_pretrained: ./pretrained/clip/ViT-B-16.pt
+M_clip_pretrained: ./pretrained/M_clip/models--M-CLIP--XLM-Roberta-Large-Vit-B-32/snapshots/85949a3ac1415027bdf7a5d0994bba8d992fe494

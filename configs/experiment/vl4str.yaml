@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /model: vl4str
+
+model:
+  img_size: [ 224, 224 ]      # [ height, width ]
+  patch_size: [ 16, 16 ]      # [ height, width ]
+# NOTE: add M-clip_pretrained
+  clip_pretrained: /PUT/YOUR/PATH/HERE/pretrained/clip/ViT-L-14.pt
+  M_clip_pretrained: /PUT/YOUR/PATH/HERE/pretrained/M_clip/M_CLIP-XLM-Roberta-Large-Vit-L-14
